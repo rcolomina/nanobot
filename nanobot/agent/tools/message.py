@@ -117,9 +117,8 @@ class MessageTool(Tool):
             metadata={
                 "message_id": message_id,
             },
-
             message_thread_id=message_thread_id,
-
+        )
 
         try:
             await self._send_callback(msg)
